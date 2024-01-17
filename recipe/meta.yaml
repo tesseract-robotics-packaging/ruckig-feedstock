@@ -1,0 +1,36 @@
+{% set version = "0.12.2" %}
+
+package:
+  name: ruckig
+  version: {{ version }}
+
+source:
+  - url: https://github.com/pantor/ruckig/archive/refs/tags/v{{ version }}.tar.gz
+    sha256: d51ed9f42279da863c3d295f5f1e3172a2105eda8ba86802c670e6955caad45b
+    folder: src
+    patches:
+      - ruckig-install-header-files.patch
+
+requirements:
+  build:
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+    - gtest
+    - gmock
+    - cmake
+    - ninja # [win]
+    - make # [linux]
+    - lcov # [linux]
+
+build:
+  number: 0
+
+about:
+  home: https://github.com/pantor/ruckig
+  summary: Motion Generation for Robots and Machines. Real-time. Jerk-constrained. Time-optimal.
+  license: MIT
+  license_file: src/LICENSE
+
+extra:
+  recipe-maintainers:
+    - johnwason
