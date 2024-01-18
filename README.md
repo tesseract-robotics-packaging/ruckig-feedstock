@@ -26,14 +26,14 @@ Current release info
 Installing ruckig
 =================
 
-Installing `ruckig` from the `tesseract-robotics` channel can be achieved by adding `tesseract-robotics` to your channels with:
+Installing `ruckig` from the `tesseract-robotics/label/labels/dev/indv` channel can be achieved by adding `tesseract-robotics/label/labels/dev/indv` to your channels with:
 
 ```
-conda config --add channels tesseract-robotics
+conda config --add channels tesseract-robotics/label/labels/dev/indv
 conda config --set channel_priority strict
 ```
 
-Once the `tesseract-robotics` channel has been enabled, `ruckig` can be installed with `conda`:
+Once the `tesseract-robotics/label/labels/dev/indv` channel has been enabled, `ruckig` can be installed with `conda`:
 
 ```
 conda install ruckig
@@ -48,26 +48,26 @@ mamba install ruckig
 It is possible to list all of the versions of `ruckig` available on your platform with `conda`:
 
 ```
-conda search ruckig --channel tesseract-robotics
+conda search ruckig --channel tesseract-robotics/label/labels/dev/indv
 ```
 
 or with `mamba`:
 
 ```
-mamba search ruckig --channel tesseract-robotics
+mamba search ruckig --channel tesseract-robotics/label/labels/dev/indv
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search ruckig --channel tesseract-robotics
+mamba repoquery search ruckig --channel tesseract-robotics/label/labels/dev/indv
 
 # List packages depending on `ruckig`:
-mamba repoquery whoneeds ruckig --channel tesseract-robotics
+mamba repoquery whoneeds ruckig --channel tesseract-robotics/label/labels/dev/indv
 
 # List dependencies of `ruckig`:
-mamba repoquery depends ruckig --channel tesseract-robotics
+mamba repoquery depends ruckig --channel tesseract-robotics/label/labels/dev/indv
 ```
 
 
