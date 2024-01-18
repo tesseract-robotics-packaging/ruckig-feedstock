@@ -5,9 +5,9 @@ c_compiler_version:
 cdt_name:
 - cos6
 channel_sources:
-- tesseract-robotics/labels/dev/indv,conda-forge
+- tesseract-robotics/label/dev_indv,conda-forge
 channel_targets:
-- tesseract-robotics labels/dev/indv
+- tesseract-robotics dev_indv
 cxx_compiler:
 - gxx
 cxx_compiler_version:
