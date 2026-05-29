@@ -1,5 +1,5 @@
-About ruckig-feedstock
-======================
+About libruckig-feedstock
+=========================
 
 Feedstock license: [BSD-3-Clause](https://github.com/tesseract-robotics/ruckig-feedstock/blob/main/LICENSE.txt)
 
@@ -7,13 +7,20 @@ Home: https://github.com/pantor/ruckig
 
 Package license: MIT
 
-Summary: Motion Generation for Robots and Machines. Real-time. Jerk-constrained. Time-optimal.
+Summary: C++ Library Motion Generation for Robots and Machines. Real-time. Jerk-constrained. Time-optimal.
 
 Current build status
 ====================
 
 
-<table>
+<table><tr>
+    <td>GitHub Actions</td>
+    <td>
+      <a href="https://github.com/tesseract-robotics/ruckig-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/tesseract-robotics/ruckig-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
+      </a>
+    </td>
+  </tr>
 </table>
 
 Current release info
@@ -21,71 +28,71 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-ruckig-green.svg)](https://anaconda.org/tesseract-robotics/ruckig) | [![Conda Downloads](https://img.shields.io/conda/dn/tesseract-robotics/ruckig.svg)](https://anaconda.org/tesseract-robotics/ruckig) | [![Conda Version](https://img.shields.io/conda/vn/tesseract-robotics/ruckig.svg)](https://anaconda.org/tesseract-robotics/ruckig) | [![Conda Platforms](https://img.shields.io/conda/pn/tesseract-robotics/ruckig.svg)](https://anaconda.org/tesseract-robotics/ruckig) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-libruckig-green.svg)](https://anaconda.org/tesseract-robotics/libruckig) | [![Conda Downloads](https://img.shields.io/conda/dn/tesseract-robotics/libruckig.svg)](https://anaconda.org/tesseract-robotics/libruckig) | [![Conda Version](https://img.shields.io/conda/vn/tesseract-robotics/libruckig.svg)](https://anaconda.org/tesseract-robotics/libruckig) | [![Conda Platforms](https://img.shields.io/conda/pn/tesseract-robotics/libruckig.svg)](https://anaconda.org/tesseract-robotics/libruckig) |
 
-Installing ruckig
-=================
+Installing libruckig
+====================
 
-Installing `ruckig` from the `tesseract-robotics/label/dev_indv` channel can be achieved by adding `tesseract-robotics/label/dev_indv` to your channels with:
+Installing `libruckig` from the `tesseract-robotics/label/dev_indv` channel can be achieved by adding `tesseract-robotics/label/dev_indv` to your channels with:
 
 ```
 conda config --add channels tesseract-robotics/label/dev_indv
 conda config --set channel_priority strict
 ```
 
-Once the `tesseract-robotics/label/dev_indv` channel has been enabled, `ruckig` can be installed with `conda`:
+Once the `tesseract-robotics/label/dev_indv` channel has been enabled, `libruckig` can be installed with `conda`:
 
 ```
-conda install ruckig
-```
-
-or with `mamba`:
-
-```
-mamba install ruckig
-```
-
-It is possible to list all of the versions of `ruckig` available on your platform with `conda`:
-
-```
-conda search ruckig --channel tesseract-robotics/label/dev_indv
+conda install libruckig
 ```
 
 or with `mamba`:
 
 ```
-mamba search ruckig --channel tesseract-robotics/label/dev_indv
+mamba install libruckig
+```
+
+It is possible to list all of the versions of `libruckig` available on your platform with `conda`:
+
+```
+conda search libruckig --channel tesseract-robotics/label/dev_indv
+```
+
+or with `mamba`:
+
+```
+mamba search libruckig --channel tesseract-robotics/label/dev_indv
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search ruckig --channel tesseract-robotics/label/dev_indv
+mamba repoquery search libruckig --channel tesseract-robotics/label/dev_indv
 
-# List packages depending on `ruckig`:
-mamba repoquery whoneeds ruckig --channel tesseract-robotics/label/dev_indv
+# List packages depending on `libruckig`:
+mamba repoquery whoneeds libruckig --channel tesseract-robotics/label/dev_indv
 
-# List dependencies of `ruckig`:
-mamba repoquery depends ruckig --channel tesseract-robotics/label/dev_indv
+# List dependencies of `libruckig`:
+mamba repoquery depends libruckig --channel tesseract-robotics/label/dev_indv
 ```
 
 
 
 
-Updating ruckig-feedstock
-=========================
+Updating libruckig-feedstock
+============================
 
-If you would like to improve the ruckig recipe or build a new
+If you would like to improve the libruckig recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `tesseract-robotics` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `tesseract-robotics` channel.
-Note that all branches in the tesseract-robotics/ruckig-feedstock are
+Note that all branches in the tesseract-robotics/libruckig-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
-on branches in forks and branches in the main repository should only be used to
+on branches in forks, and branches in the main repository should only be used to
 build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
