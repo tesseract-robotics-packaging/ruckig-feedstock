@@ -33,14 +33,14 @@ Current release info
 Installing libruckig
 ====================
 
-Installing `libruckig` from the `tesseract-robotics/label/dev_indv` channel can be achieved by adding `tesseract-robotics/label/dev_indv` to your channels with:
+Installing `libruckig` from the `tesseract-robotics` channel can be achieved by adding `tesseract-robotics` to your channels with:
 
 ```
-conda config --add channels tesseract-robotics/label/dev_indv
+conda config --add channels tesseract-robotics
 conda config --set channel_priority strict
 ```
 
-Once the `tesseract-robotics/label/dev_indv` channel has been enabled, `libruckig` can be installed with `conda`:
+Once the `tesseract-robotics` channel has been enabled, `libruckig` can be installed with `conda`:
 
 ```
 conda install libruckig
@@ -55,26 +55,26 @@ mamba install libruckig
 It is possible to list all of the versions of `libruckig` available on your platform with `conda`:
 
 ```
-conda search libruckig --channel tesseract-robotics/label/dev_indv
+conda search libruckig --channel tesseract-robotics
 ```
 
 or with `mamba`:
 
 ```
-mamba search libruckig --channel tesseract-robotics/label/dev_indv
+mamba search libruckig --channel tesseract-robotics
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search libruckig --channel tesseract-robotics/label/dev_indv
+mamba repoquery search libruckig --channel tesseract-robotics
 
 # List packages depending on `libruckig`:
-mamba repoquery whoneeds libruckig --channel tesseract-robotics/label/dev_indv
+mamba repoquery whoneeds libruckig --channel tesseract-robotics
 
 # List dependencies of `libruckig`:
-mamba repoquery depends libruckig --channel tesseract-robotics/label/dev_indv
+mamba repoquery depends libruckig --channel tesseract-robotics
 ```
 
 
@@ -105,5 +105,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@Levi-Armstrong](https://github.com/Levi-Armstrong/)
 * [@johnwason](https://github.com/johnwason/)
+* [@traversaro](https://github.com/traversaro/)
 

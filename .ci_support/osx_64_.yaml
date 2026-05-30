@@ -7,9 +7,9 @@ c_compiler:
 c_compiler_version:
 - '19'
 channel_sources:
-- tesseract-robotics/label/dev_indv,conda-forge
+- tesseract-robotics,conda-forge
 channel_targets:
-- tesseract-robotics dev_indv
+- tesseract-robotics main
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
